@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class SubstringCheckerTester {
+class StringUtilitiesTester {
 	@Test
 	void testNullInputs() {
 		assertThrows(
