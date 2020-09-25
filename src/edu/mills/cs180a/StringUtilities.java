@@ -47,4 +47,8 @@ public class StringUtilities {
 		}
 		return true;
 	}
+	
+	protected static int getLength(String s) {
+		return s.length();
+	}
 }
