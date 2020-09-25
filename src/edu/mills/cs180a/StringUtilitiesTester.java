@@ -17,4 +17,9 @@ class StringUtilitiesTester {
     assertTrue(StringUtilities.isSubstring("", "foo"));
     // TODO: write rest
   }
+
+  @Test
+  void isSubstring_True_Length1Substring() {
+    assertTrue(StringUtilities.isSubstring("A", "ABC"));
+  }
 }
