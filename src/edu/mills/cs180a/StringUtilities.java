@@ -6,6 +6,8 @@ import java.util.Objects;
  * Static utility class for testing whether a string is a substring of another string.
  */
 public class StringUtilities {
+  private StringUtilities() {}
+
   /**
    * Tests whether the potential substring is in the full string. The empty string is considered a
    * substring of every full string.
