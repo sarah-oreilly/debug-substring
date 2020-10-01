@@ -28,8 +28,13 @@ class StringUtilitiesTester {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"Z, ABC", "ABD, ABC", "CBC, ABC", "ABC, FBC"})
+    @CsvSource(value = {"Z, ABC", "ABD, ABC", "ABC, FBC", "CBC, ABC"})
     void isSubstring_False_InvalidSubstring(String substring, String text) {
         assertFalse(StringUtilities.isSubstring(substring, text));
+    }
+
+    @Test
+    void isSubstring_False_CBCinABC() {
+        assertFalse(StringUtilities.isSubstring("BCD", "ABC"));
     }
 }
