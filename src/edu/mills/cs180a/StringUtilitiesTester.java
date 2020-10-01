@@ -25,7 +25,7 @@ class StringUtilitiesTester {
     @ParameterizedTest
     @CsvSource(value = {"A, ABC", "BC, ABCDE", "ABCD, ABCD", "D, ABCD", "A, A"})
     void isSubstring_True_ValidSubstring(String substring, String text) {
-        assertTrue(StringUtilities.isSubstring("A", "ABC"));
+        assertTrue(StringUtilities.isSubstring(substring, text));
     }
 
     @ParameterizedTest

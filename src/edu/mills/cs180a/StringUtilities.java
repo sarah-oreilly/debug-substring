@@ -28,7 +28,11 @@ public class StringUtilities {
         for (int i = 0; i < text.length(); i++) {
             // Check if current character of the full string matches start of substring.
             if (text.charAt(i) == substring.charAt(0)) {
-                // If so, see if the rest of the strings match.
+                // if substring is only one char no need to check further
+                if (substring.length() == 1) {
+                    return true;
+                }
+                // Otherwise, see if the rest of the strings match.
                 if (isSubstringHelper(substring, text, i + 1)) {
                     return true;
                 }
