@@ -34,7 +34,7 @@ class StringUtilitiesTester {
     }
 
     @Test
-    void isSubstring_False_CBCinABC() {
+    void isSubstring_False_SubstringMatchesEndButIsLonger() {
         assertFalse(StringUtilities.isSubstring("BCD", "ABC"));
     }
 }
