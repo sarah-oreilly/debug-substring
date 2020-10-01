@@ -1,5 +1,6 @@
 package edu.mills.cs180a;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -36,5 +37,10 @@ class StringUtilitiesTester {
     @Test
     void isSubstring_False_SubstringMatchesEndButIsLonger() {
         assertFalse(StringUtilities.isSubstring("BCD", "ABC"));
+    }
+
+    @Test
+    void getLength_returnsLength_ValidString() {
+        assertEquals(6, StringUtilities.getLength("String"));
     }
 }

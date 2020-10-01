@@ -42,8 +42,8 @@ public class StringUtilities {
     private static boolean isSubstringHelper(String substring, String text, int offset) {
         // i is used as an index for substring, offset is used for text
         if (offset < text.length()) {
-            for (int i = 1; // The character with index 0 has already been tested.
-                    i < substring.length() && offset < text.length(); i++, offset++) {
+            // The character with index 0 has already been tested.
+            for (int i = 1; i < substring.length() && offset < text.length(); i++, offset++) {
                 if (text.charAt(offset) != substring.charAt(i)) {
                     return false;
                 }
